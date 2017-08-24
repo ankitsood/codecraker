@@ -1,0 +1,78 @@
+doctype html
+html
+	head
+			title= appTitle +'  | ' +pageTitle
+			style
+				include ../css/app.css
+
+			script(type="text/javascript")
+				include ../js/app.js
+			
+			
+			
+	body
+		h1=pageTitle
+		section(itemscope,itemtype="http://schema.org/Game")
+			p(itemprop="description") 
+				| Guess the Code <br/>  
+				a#loginLink(itemprop="url",href="/dashbord") Return  to dashbord
+				| <br/>
+				a#loginLink(itemprop="url",href="/leave_game") Give Up! <br/>
+				
+			table(id="gameTable")
+				tr
+					th First Num .
+					th Second Num.
+					th Third Num .
+					th Fourth Num.
+					th Fifth Num .
+					th Check
+					th Result
+				if tryList
+					each tryObj in tryList
+						tr
+							each tryNum in tryObj.tryData
+								td
+									span 	
+										= tryNum
+							td
+								span(class="right")
+									= tryObj.tryResult[0]
+								span(class="wrong")
+									= tryObj.tryResult[1]
+				
+									
+				
+				if !gameOver
+					tr
+					form(method="POST")
+						td
+							input(name="firstNum",type="number",class="numclass",maxlength=1,onkeypress="test(this.name, event)")
+						td
+							input(name="secondNum",type="number" ,pattern="[0-9]",class="numclass",maxlength=1,onkeypress="test(this.name, event)")
+						td
+							input(name="thirdNum",type="number",class="numclass",maxlength=1,onkeypress="test(this.name, event)")
+						td
+							input(name="fourthNum",type="number",class="numclass",maxlength=1,onkeypress="test(this.name, event)")
+						td
+							input(name="fifthNum",type="number",class="numclass",maxlength=1,onkeypress="test(this.name, event)")
+						td
+							input(value="Check",name="submitButton",type="submit")
+				
+				else
+					tr
+						each resultNum in gameOver.tryData
+							td
+								span 	
+									= tryNum
+						
+					case gameOver.reason
+						when 'give_up'
+							span You Gave Up .Too Lazy to complete?
+						when 'time_up'
+							span Ohh!!! Time flew past you 
+						when 'out_of_tries'
+							span Hard Luck ! you are out to tries 
+						when 'winner'
+							span That's How it is done !! Congrats !
+						

@@ -1,0 +1,13 @@
+doctype html
+html
+	head
+			title= appTitle +'  | ' +pageTitle
+	body
+		h1=pageTitle
+		section(itemscope,itemtype="http://schema.org/Game")
+			p(itemprop="description") 
+				| What kind of Game you wana Play? <br/>  
+				| Here are some options 
+				a#loginLink(itemprop="url",href="/join_game_single") SinglePlayer
+				|   or 
+				a#loginLink(itemprop="url",href="/join_game_multiple") Multiplayer 

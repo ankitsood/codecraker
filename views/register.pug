@@ -1,0 +1,23 @@
+doctype html
+html
+	head
+			title= appTitle +'  | ' +pageTitle
+	body(itemscope,itemtype="http://schema.org/WebPage")
+		span(style="color:red")=error
+		h1(itemprop="name")=pageTitle
+		p(itemprop="description") We would like to know something more about you to get started:
+		form(method="post")
+			|Name             :
+			input(name="usr_name",type="text")
+			br
+			|Email            :
+			input(name="usr_email",type="text")
+			br
+			|Password         :
+			input(name="usr_password",type="password")
+			br
+			|Retype Password  :
+			input(name="usr_confirmpassword",type="password") 
+			br
+			input(name="register_submit",type="submit",value="Register") 
+			

@@ -1,0 +1,33 @@
+{
+  "name": "codecraker",
+  "version": "1.0.0",
+  "description": "small game to deduce the  the  numbers and their order",
+  "main": "app.js",
+  "scripts": {
+    "test": "karma test/karma.conf.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankitsood/codecraker.git"
+  },
+  "keywords": [
+    "codecraker",
+    "game",
+    "node",
+    "example"
+  ],
+  "author": "Ankit Sood",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ankitsood/codecraker/issues"
+  },
+  "homepage": "https://github.com/ankitsood/codecraker#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.17.2",
+    "client-sessions": "^0.8.0",
+    "express": "^4.15.4",
+    "hashmap": "^2.3.0",
+    "mongoose": "^4.11.8"
+  }
+}

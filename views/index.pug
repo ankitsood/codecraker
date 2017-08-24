@@ -1,0 +1,13 @@
+doctype html
+html
+	head
+			title= appTitle +'  | ' +pageTitle
+	body
+		h1=pageTitle
+		section(itemscope,itemtype="http://schema.org/Game")
+			p(itemprop="description") 
+				| Crack the code <br/>  Perfect mix of Luck and Deduction
+				| Get Started on the Game 
+				a#loginLink(itemprop="url",href="/register") Register
+				|   or 
+				a#loginLink(itemprop="url",href="/login") Login 

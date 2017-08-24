@@ -1,0 +1,18 @@
+input.numclass{
+    font-size: 18px;
+    font-weight: bolder;
+}
+span.right{
+    color: darkgreen;
+    padding: 3px;
+    background-color: white;
+    margin: 4px;
+    font-weight: bolder;
+}
+span.wrong{
+    color:darkorange;
+    padding: 3px;
+    background-color: white;
+    margin: 4px;
+     font-weight: bolder;
+}

@@ -1,0 +1,17 @@
+doctype html
+html
+	head
+			title= appTitle +'  | ' +pageTitle
+	body(itemscope,itemtype="http://schema.org/WebPage")
+		span(style="color:red")=error
+		h1(itemprop="name")=pageTitle
+		p(itemprop="description") Login to  get started:
+		form(method="post")
+			|Email            :
+			input(name="usr_email",type="text")
+			br
+			|Password         :
+			input(name="usr_password",type="password")
+			br
+			input(name="login_submit",type="submit",value="Login") 
+			
