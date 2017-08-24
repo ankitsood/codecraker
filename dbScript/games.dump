@@ -1,0 +1,5 @@
+{"_id":{"$oid":"58f4f3a6810ec544701504de"},"numbeOfPlayers":1,"gameStartTime":{"$date":"2017-04-17T16:56:06.506Z"},"gameWinnerUserId":null,"gameCompleted":false,"gameTimedOut":false,"gameTestString":[2,3,5,4,6],"__v":0}
+{"_id":{"$oid":"58f4fe3d6fcaea45e80b4bea"},"numbeOfPlayers":1,"gameStartTime":{"$date":"2017-04-17T17:41:17.716Z"},"gameWinnerUserId":null,"gameCompleted":false,"gameTimedOut":false,"gameTestString":[3,4,8,6,2],"__v":0}
+{"_id":{"$oid":"58f4fefb6fcaea45e80b4bee"},"numbeOfPlayers":1,"gameStartTime":{"$date":"2017-04-17T17:44:27.272Z"},"gameWinnerUserId":null,"gameCompleted":false,"gameTimedOut":false,"gameTestString":[5,7,2,6,3],"__v":0}
+{"_id":{"$oid":"58f517336fcaea45e80b4bf4"},"numbeOfPlayers":1,"gameStartTime":{"$date":"2017-04-17T19:27:47.149Z"},"gameWinnerUserId":null,"gameCompleted":false,"gameTimedOut":false,"gameTestString":[8,6,3,5,2],"__v":0}
+{"_id":{"$oid":"596fd6a6695b2444a4b55341"},"numbeOfPlayers":1,"gameStartTime":{"$date":"2017-07-19T22:01:10.879Z"},"gameWinnerUserId":null,"gameCompleted":false,"gameTimedOut":false,"gameTestString":[5,3,4,7,2],"__v":0}
