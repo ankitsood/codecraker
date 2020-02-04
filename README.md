@@ -1,4 +1,4 @@
 # codecraker
 -------------------
 -Work in progress 
-Rewriting in Angular 5 
+Rewriting using  [Phaser](http://phaser.io/) and [Capacitor](https://capacitor.ionicframework.com/)
